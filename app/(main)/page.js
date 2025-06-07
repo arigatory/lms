@@ -234,6 +234,8 @@ const HomePage = () => {
           })}
         </div>
       </section>
+
+      <Support></Support>
     </>
   );
 };
