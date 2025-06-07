@@ -1,0 +1,189 @@
+npm i tailwindcss-animate
+npx shadcn@latest init -d
+
+
+npx shadcn@latest add button
+npx shadcn@latest add accordion
+npx shadcn@latest add avatar 
+npx shadcn@latest add badge --legacy-peer-deps
+npx shadcn@latest add toast --legacy-peer-deps
+npx shadcn@latest add calendar 
+npx shadcn@latest add card 
+npx shadcn@latest add carousel 
+npx shadcn@latest add checkbox 
+npx shadcn@latest add command 
+npx shadcn@latest add popover 
+npx shadcn@latest add dialog 
+npx shadcn@latest add dropdown-menu 
+npx shadcn@latest add form 
+npx shadcn@latest add input 
+npx shadcn@latest add label 
+npx shadcn@latest add popover progress 
+npx shadcn@latest add select 
+npx shadcn@latest add separator 
+npx shadcn@latest add sheet 
+npx shadcn@latest add table 
+npx shadcn@latest add tabs 
+npx shadcn@latest add textarea 
+npx shadcn@latest add sonner 
+
+
+npm install mongoose --legacy-peer-deps
+npm install bcryptjs --legacy-peer-deps
+npm install next-auth@beta --legacy-peer-deps
+
+npm install stripe
+npm install @stripe/stripe-js stripe --legacy-peer-deps
+npm install resend --legacy-peer-deps
+
+npm install @hello-pangea/dnd @tanstack/react-table react-dropzone react-quill --legacy-peer-deps
+
+
+
+npm i react-player --legacy-peer-deps
+
+
+
+https://pdf-lib.js.org/
+npm install pdf-lib @pdf-lib/fontkit --legacy-peer-deps
+ 
+
+
+
+======================Convert Data for Get Slug ========================
+  export const getSlug = (title) => {
+    if (!title) return null;
+
+    const slug = title.toLowerCase().replace(/ /g, -'')
+    .replace(/[^\w-]+/g, '');
+
+    return slug;
+  }
+
+=============================================
+
+export const config = {
+  matcher: [
+    "/((?!api/auth|_next|favicon.ico|.*\\..*).*)", // Exclude Next.js internal routes and API routes
+    "/", // Include the root route
+  ],
+};
+
+
+=============================================
+
+ Easy Learning Academy - Best Online Professional Courses
+Some Videos Embed Code link for Course Videos 
+
+https://www.youtube.com/embed/A7sbWxW9FXA?si=eMqA0-JWuSp9DiTU
+https://www.youtube.com/embed/6d9RQSzcZMY?si=_nxKUCGkM-0PAoKL
+https://www.youtube.com/embed/fUjG30bUV_s?si=Jkq7GR7Fg8hRWTdU
+https://www.youtube.com/embed/Et068bVFstY?si=3_YZhzM9VWMVRhvj
+https://www.youtube.com/embed/ucBfHe-Q4k8?si=u7kTmRxDZHM8cxZt
+https://www.youtube.com/embed/u6T2sXKmASY?si=v9ukU91nsR1_r4mt
+https://www.youtube.com/embed/mLTl5fJ5RXA?si=G1L0lADbHaHjfJ3S 
+https://www.youtube.com/embed/vcYAS_ZBJ6Q?si=z3YhsKK-X5zmyHKN
+
+https://www.youtube.com/embed/MybewIZYDBo?si=N6mFhzwcMk9bummk
+https://www.youtube.com/embed/6Hu7UjyqK54?si=E2FPeurndtvwt40k
+https://www.youtube.com/embed/KM0Qxjs5Lhw?si=BnUhYS3Bdy8jlWbt
+https://www.youtube.com/embed/telKvfhQ8m0?si=tdFYBu3Gz3LSWNz4
+https://www.youtube.com/embed/wDmf5L7Y-hY?si=d1yfXZy9m0-pFLyy
+
+
+https://www.youtube.com/embed/E5dOIw02s0I?si=yyJ7PGxOSmKD0zUN
+https://www.youtube.com/embed/sBRp07qPjrk?si=if9BfUDW06dw4-2B
+https://www.youtube.com/embed/d37N202nRi8?si=6Vsprg6VwbO6dy7M
+https://www.youtube.com/embed/JY5RtwYl2uU?si=WFwW_uAV9eMklZGh
+https://www.youtube.com/embed/lsa6FsUkjRg?si=2pSIeQ1wsFT2-Vsx
+https://www.youtube.com/embed/RNdbnAmdlJ4?si=6kcVQFzCi7ARw5j9
+
+
+
+ 
+
+ 
+ 
+
+==================================================================
+Question:
+In the addQuizToQuizSet function, what is the purpose of the following code snippet?
+
+Options:
+A) It generates a random string to uniquely identify the quiz.
+B) It converts the quiz title into a URL-friendly format for use as a slug.
+C) It validates the quiz title against a database.
+D) It replaces all spaces in the quiz title with underscores.
+
+Correct Answer:
+B) It converts the quiz title into a URL-friendly format for use as a slug.
+
+---------------------------------------------------------------------------------------------------------------------------
+Question:
+What happens if an error occurs during the execution of the updateQuizSet function?
+
+Options:
+A) The error will be ignored, and the function will exit silently.
+B) The function will throw a new error wrapping the original error.
+C) The function will return a default value of null.
+D) The error will be logged to the console.
+
+Correct Answer:
+B) The function will throw a new error wrapping the original error.
+
+---------------------------------------------------------------------------------------------------------------------------
+Question:
+In the doCreateQuizSet function, there seems to be a small typo in the code when generating the 
+
+Options:
+A) The getSlug function is incorrectly called.
+B) The slug value is not assigned properly to the data object.
+C) data.tite is a typo; it should be data.title.
+D) data['slug'] should be data.slug.
+
+Correct Answer:
+C) data.tite is a typo; it should be data.title.
+
+---------------------------------------------------------------------------------------------------------------------------
+Question:
+  What specific status are the news articles filtered by in the query?
+
+    A) 'pending'
+    B) 'draft'
+    C) 'inactive'
+    D) 'active'
+
+Correct Answer > D  'active' 
+==================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+ 
+
+
+
