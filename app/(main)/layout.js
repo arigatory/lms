@@ -30,7 +30,7 @@ const MainLayout = ({ children }) => {
         </div>
       </header>
 
-      <main> {children} </main>
+      <main className='flex-1 pt-20 flex flex-col border-b border-gray-700'> {children} </main>
       <SiteFooter />
     </div>
   );
