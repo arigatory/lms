@@ -12,7 +12,50 @@ import {
 } from '@/components/ui/carousel';
 import { formatPrice } from '@/lib/formatPrice';
 
-export default function RelatedCourses({ courses }) {
+const courses = [
+  {
+    id: 1,
+    title: 'Дизайн',
+    thumbnail: '/assets/images/categories/design.jpg',
+  },
+  {
+    id: 3,
+    title: 'Разработка',
+    thumbnail: '/assets/images/categories/development.jpg',
+  },
+  {
+    id: 4,
+    title: 'Маркетинг',
+    thumbnail: '/assets/images/categories/marketing.jpg',
+  },
+  {
+    id: 5,
+    title: 'IT и ПО',
+    thumbnail: '/assets/images/categories/it_software.jpg',
+  },
+  {
+    id: 6,
+    title: 'Саморазвитие',
+    thumbnail: '/assets/images/categories/personal_development.jpg',
+  },
+  {
+    id: 7,
+    title: 'Бизнес',
+    thumbnail: '/assets/images/categories/business.jpg',
+  },
+  {
+    id: 8,
+    title: 'Фотография',
+    thumbnail: '/assets/images/categories/photography.jpg',
+  },
+  {
+    id: 9,
+    title: 'Музыка',
+    thumbnail: '/assets/images/categories/music.jpg',
+  },
+];
+
+export default function RelatedCourses() {
   return (
     <section className="">
       <div className="container">
