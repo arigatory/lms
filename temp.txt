@@ -1,0 +1,62 @@
+{
+  title: 'Learn Python',
+  thumbnail: 'python_thumbnail.png',
+  modules: [
+    {
+      _id: new ObjectId('663a0893bfe65e5778eedf3c'),
+      title: 'Python Basics',
+      description: 'Learn the fundamentals of Python programming language.',
+      status: 'active',
+      slug: 'python-basics',
+      course: new ObjectId('6648184a6fe803e9128d7fba'),
+      lessonIds: [Array],
+      duration: 2286
+    },
+    {
+      _id: new ObjectId('663a0893bfe65e5778eedf3d'),
+      title: 'HTML5 and CSS3 Essentials',
+      description: 'Master HTML5 and CSS3 for modern web development.',
+      status: 'active',
+      slug: 'html5-css3-essentials',
+      course: new ObjectId('6648184a6fe803e9128d7fba'),
+      lessonIds: [Array],
+      duration: 2286
+    }
+  ],
+  price: 29.99,
+  category: {
+    _id: new ObjectId('664813cc6fe803e9128d7fae'),
+    title: 'Кодинг',
+    description: 'Хочешь говорить на "ты" с компьютерами? Давай кодить вместе! От простых сайтов до сложных алгоритмов — всё объясним на пальцах',
+    thumbnail: 'development.jpg',
+    __v: 0
+  },
+  instructor: {
+    _id: new ObjectId('663a06e7bfe65e5778eedf2a'),
+    firstName: 'John',
+    lastName: 'Doe',
+    password: 'password123',
+    email: 'john.doe@example.com',
+    phone: '+1234567890',
+    role: 'Teacher',
+    bio: 'Experienced educator passionate about fostering student learning and development.',
+    socialMedia: {
+      twitter: '@johndoe',
+      linkedin: 'linkedin.com/in/johndoe',
+      facebook: 'facebook.com/johndoe'
+    },
+    profilePicture: 'https://i.pravatar.cc',
+    designation: 'Senior Software Engineer, Dell Inc.'
+  },
+  testimonials: [
+    {
+      _id: new ObjectId('663a0a05bfe65e5778eedf58'),
+      content: 'Great course! I learned a lot.',
+      rating: 5,
+      courseId: new ObjectId('6648184a6fe803e9128d7fba'),
+      user: [Object]
+    }
+  ],
+  subtitle: 'Learn Python Like a Pro',
+  id: '6648184a6fe803e9128d7fba'
+}

@@ -24,8 +24,7 @@ export const metadata = {
     ],
     apple: '/apple-touch-icon.png'
   },
-  manifest: '/site.webmanifest',
-  themeColor: '#FFFFFF'
+  manifest: '/site.webmanifest'
 }
 
 const poppings = Inter({
