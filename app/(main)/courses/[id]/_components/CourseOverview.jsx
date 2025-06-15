@@ -1,7 +1,6 @@
 import { CheckCheck } from 'lucide-react';
 
 export default function CourseOverview({ course }) {
-  console.log('CourseOverview', course);
   return (
     <>
       <h3 className="text-2xl">О курсе</h3>

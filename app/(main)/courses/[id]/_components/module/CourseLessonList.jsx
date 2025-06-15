@@ -1,10 +1,11 @@
 import { cn } from '@/lib/utils';
-import {
-  Tv,
-} from 'lucide-react';
+import { getLesson } from '@/queries/lessons';
+import { Tv } from 'lucide-react';
 
+export default async function CourseLessonList({ lessonId }) {
+  const lesson = await getLesson(lessonId);
+  console.log('lesson', lesson);
 
-export default function CourseLessonList() {
   return (
     <div>
       <button
@@ -14,7 +15,7 @@ export default function CourseLessonList() {
         )}
       >
         <Tv size={16} className="text-slate-500" />
-        Что такое React?
+        {lesson?.title || 'Загрузка...'}
       </button>
     </div>
   );
