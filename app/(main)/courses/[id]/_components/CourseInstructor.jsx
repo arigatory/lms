@@ -1,11 +1,17 @@
+import { russianCase } from '@/lib/russianCase';
+import { getCourseDetailsByInstructor } from '@/queries/courses';
 import { Presentation, UsersRound, Star, MessageSquare } from 'lucide-react';
 import Image from 'next/image';
 
-export default function CourseInstructor({ course }) {
+export default async function CourseInstructor({ course }) {
   const instructor = course?.instructor;
   const fullName = `${instructor?.firstName || ''} ${
     instructor?.lastName || ''
   }`.trim();
+
+  const courseDetailsByInstructor = await getCourseDetailsByInstructor(
+    instructor._id.toString()
+  );
 
   if (!course) {
     return <div>Загрузка...</div>;
@@ -33,19 +39,40 @@ export default function CourseInstructor({ course }) {
             <ul className="list space-y-4">
               <li className="flex items-center space-x-3">
                 <Presentation className="text-gray-600" />
-                <div>10+ курсов</div>
+                <div>
+                  {courseDetailsByInstructor?.courses}{' '}
+                  {russianCase(courseDetailsByInstructor?.courses, [
+                    'курс',
+                    'курса',
+                    'курсов',
+                  ])}
+                </div>
               </li>
               <li className="flex space-x-3">
                 <UsersRound className="text-gray-600" />
-                <div>2000+ студентов</div>
+                <div>
+                  {courseDetailsByInstructor?.enrollments}{' '}
+                  {russianCase(courseDetailsByInstructor?.enrollments, [
+                    'студент',
+                    'студента',
+                    'студентов',
+                  ])}
+                </div>
               </li>
               <li className="flex space-x-3">
                 <MessageSquare className="text-gray-600" />
-                <div>1500+ отзывов</div>
+                <div>
+                  {courseDetailsByInstructor?.reviews}{' '}
+                  {russianCase(courseDetailsByInstructor?.reviews, [
+                    'отзыв',
+                    'отзыва',
+                    'отзывов',
+                  ])}
+                </div>
               </li>
               <li className="flex space-x-3">
                 <Star className="text-gray-600" />
-                <div>Средний рейтинг 4.9</div>
+                <div>Средний рейтинг {courseDetailsByInstructor?.ratings}</div>
               </li>
             </ul>
           </div>
